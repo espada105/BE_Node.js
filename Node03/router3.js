@@ -14,7 +14,7 @@ http
             notFound(req,res)
         }
     })
-    .listen("3001",()=> console.log("Router Mk"))
+    .listen("3001",()=> console.log("http://localhost:3001/"))
 
 
     // 리팩터링

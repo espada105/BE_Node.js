@@ -11,8 +11,7 @@ http
         } else if (path==="/feed"){
             feed(req,res);
         } else {
-            res.statusCode = 404;
-            res.end("404 page not found");
+            notFound(req,res)
         }
     })
     .listen("3001",()=> console.log("Router Mk"))
@@ -31,4 +30,9 @@ const feed = (req,res) =>{
     <li>pictre1</li>
     </ul>
     `);
+}
+
+const notFound = (req,res)=>{
+    res.statusCode = 404;
+    res.end("404 page not found")
 }
