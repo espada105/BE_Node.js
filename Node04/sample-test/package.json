@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "node04": "file:../sample-package",
+    "sample-package": "file:../sample-package"
+  }
+}

@@ -26,7 +26,7 @@ const feed = (req,res)=>{
     </ul>
     `);
 }
-
+  
 const nofound = (req,res)=>{
     res.feed(`
         404
